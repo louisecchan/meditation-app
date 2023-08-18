@@ -146,14 +146,17 @@ body {
   margin-right: 2rem;
   text-align: left;
   text-transform: uppercase;
-  line-height: 7rem;
+  /* line-height: 7rem; */
+  line-height: 6.5rem;
 }
 
 .input label {
   font-family: "Sohne Narrow", sans-serif;
-  font-size: 7.5rem;
+  /* font-size: 7.5rem; */
+  font-size: 8rem;
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 2.4rem; */
+  margin-bottom: 3rem;
   letter-spacing: 0.019rem;
 }
 
@@ -172,6 +175,7 @@ select {
 }
 
 .input select {
+  cursor: pointer;
   font-family: "Sohne Wide Bold", sans-serif;
   border: none;
   border-radius: 2.5rem;
@@ -180,7 +184,6 @@ select {
   background-color: #ffd60a;
   color: #ffffff;
   max-width: 8.75rem;
-  cursor: pointer;
   transition: 0.01s ease all;
   -webkit-border-radius: 2.5rem;
   -moz-border-radius: 2.5rem;
@@ -219,16 +222,18 @@ select {
 }
 
 .circle-outline {
+  margin-top: -1.5rem;
   width: 26rem;
   height: 26rem;
   border-radius: 50%;
   background-color: transparent;
-  border: 0.5rem solid #f1f1f1;
+  border: 0.8rem solid #f1f1f1;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   z-index: 0;
 }
 
 .circle-progress {
+  margin-top: -1.5rem;
   width: 1rem;
   height: 1rem;
   position: absolute;
@@ -313,7 +318,7 @@ button:hover {
 }
 
 .instructions {
-  margin-top: 2rem;
+  margin-top: 1.8rem;
 }
 
 .fade-in {
