@@ -1,0 +1,369 @@
+@font-face {
+  font-family: "Grotesk";
+  src: url(./assets/sharp-grotesk-medium.otf)
+}
+
+@font-face {
+  font-family: "Sohne Narrow";
+  src: url(./assets/sohne-schmal.otf)
+}
+
+
+@font-face {
+  font-family: "Sohne Wide";
+  src: url(./assets/sohne-wide.otf)
+}
+
+@font-face {
+  font-family: "Sohne Wide Bold";
+  src: url(./assets/sohne-wide-bold.otf)
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Sohne Wide", sans-serif;
+}
+
+@media screen and (max-width: 414px) {
+ 
+  .input label {
+    font-size: 2.2rem !important;
+    margin-top: 0rem !important; 
+    margin-bottom: -0.2rem !important;
+    padding: 1rem;
+  }
+
+  .breath-input {
+    /* font-size: 0.8rem !important; */
+
+  }
+
+  .breaths {
+    font-size: 0.8rem !important;
+  }
+
+  .instructions {
+    font-size: 1rem !important;
+  }
+
+  .start {
+    /* font-size: 0.7rem !important; */
+  }
+
+  .button-inactive {
+    pointer-events: none;
+    background-color: #ffe5ee !important;
+    color: #f9c0d2 !important;
+  }
+
+.circle-outline {
+  width: 12rem !important;
+  height: 12rem !important;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0.5rem solid #f1f1f1;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  z-index: 0;
+}
+
+.circle-progress {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  background-color: #CD001A;
+  border-radius: 50%;
+  transition: 4s ease all;
+  z-index: 2;
+}
+
+.circle-grow {
+  transform: scale(16);
+  -webkit-transform: scale(16);
+  -moz-transform: scale(16);
+  -ms-transform: scale(16);
+  -o-transform: scale(16);
+}
+  #object-position-9 {
+   top: 80% !important;
+   left: -30% !important;
+  }
+
+  #object-position-13 {
+    display: none;
+  }
+
+}
+
+.containerOuter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+span {
+  margin-top: 1.25rem;
+}
+
+body {
+  margin: 0;
+  /* max-height: 100vh; */
+  display: flex; 
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center;
+  text-align: center; */
+  color: #fff;
+  background-color: #F39237;
+
+}
+
+/* body::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+} */
+
+.instructions {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  margin-right: 2rem;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 7rem;
+}
+
+.input label {
+  font-family: "Sohne Narrow", sans-serif;
+  font-size: 7.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.019rem;
+}
+
+.highlighted {
+  color: #fa0e58;
+}
+
+select {
+  width: 12.8rem;
+  text-align-last: center;
+  -o-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input select {
+  font-family: "Sohne Wide Bold", sans-serif;
+  border: none;
+  border-radius: 2.5rem;
+  font-size: 1rem;
+  padding: 1.5rem 0.6rem;
+  background-color: #ffd60a;
+  color: #ffffff;
+  max-width: 8.75rem;
+  cursor: pointer;
+  transition: 0.01s ease all;
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
+  -webkit-transition: 0.01s ease all;
+  -moz-transition: 0.01s ease all;
+  -ms-transition: 0.01s ease all;
+  -o-transition: 0.01s ease all;
+}
+
+.input select:focus {
+  outline: none;
+}
+
+.input select:hover {
+  background-color: #ffffff;
+  color: #ffd60a;
+  max-width: 10.5rem;
+  max-height: 4rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  -webkit-transition: max-width 1s, max-height 2s, box-shadow 2s;
+  
+}
+
+
+.circle-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  z-index: 0;
+}
+
+.circle-outline {
+  width: 26rem;
+  height: 26rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0.5rem solid #f1f1f1;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  z-index: 0;
+}
+
+.circle-progress {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  background-color: #CD001A;
+  border-radius: 50%;
+  transition: 4s ease all;
+  z-index: 2;
+}
+
+.circle-grow {
+  transform: scale(16);
+  -webkit-transform: scale(16);
+  -moz-transform: scale(16);
+  -ms-transform: scale(16);
+  -o-transform: scale(16);
+}
+
+.breaths {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03rem;
+}
+
+.breath-input {
+  box-shadow: 0 3px 10px rgba(55, 54, 54, 0.2);
+}
+
+.no-of-breaths-left {
+  font-size: 0.85rem;
+}
+
+.start {
+  font-size: 1rem;
+}
+
+.container {
+  height: 100vh;
+}
+
+button {
+    font-family: "Sohne Wide Bold", sans-serif;
+  padding: 1.5rem 1.5rem;
+  border-radius: 2.5rem;
+  background-color: #ffffff;
+  color: #00874F;
+  border: none;
+  cursor: pointer;
+    box-shadow: 0 3px 10px rgba(55, 54, 54, 0.2);
+  transition: 0.3s ease all;
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+}
+
+button:hover {
+  background-color:  #00874F;
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transform: translate(0, -10%);
+  transition: 1s ease all;
+  -webkit-transform: translate(0, -10%);
+  -moz-transform: translate(0, -10%);
+  -ms-transform: translate(0, -10%);
+  -o-transform: translate(0, -10%);
+  -webkit-transition: 1s ease all;
+  -moz-transition: 1s ease all;
+  -ms-transition: 1s ease all;
+  -o-transition: 1s ease all;
+}
+
+
+.button-inactive {
+  pointer-events: none;
+    background-color: #ffe5ee !important;
+    color: #f9c0d2 !important;
+}
+
+.instructions {
+  margin-top: 2rem;
+}
+
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: ;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
