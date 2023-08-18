@@ -54,9 +54,9 @@ const breathingApp = () => {
 
 start.addEventListener("click", () => {
   start.classList.add("button-inactive");
-  instructions.innerText = "Get relaxed, and ready to begin breathing";
+  instructions.innerText = "Chill the fuck out, and get ready";
   setTimeout(() => {
-    instructions.innerText = "Breathing is about to begin 😮‍💨";
+    instructions.innerText = "Breathing is about to begin...";
     setTimeout(() => {
       breathingApp();
       growCircle();
