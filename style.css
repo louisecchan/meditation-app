@@ -1,43 +1,15 @@
-@font-face {
-  font-family: "Grotesk";
-  src: url(./assets/sharp-grotesk-medium.otf)
-}
-
-@font-face {
-  font-family: "Sohne Narrow";
-  src: url(./assets/sohne-schmal.otf)
-}
-
-
-@font-face {
-  font-family: "Sohne Wide";
-  src: url(./assets/sohne-wide.otf)
-}
-
-@font-face {
-  font-family: "Sohne Wide Bold";
-  src: url(./assets/sohne-wide-bold.otf)
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Sohne Wide", sans-serif;
-}
-
-@media screen and (max-width: 414px) {
- 
-  .input label {
-    font-size: 2.2rem !important;
-    margin-top: 0rem !important; 
-    margin-bottom: -0.2rem !important;
-    padding: 1rem;
+@media screen and (max-width: 420px) {
+  .container-outer {
+    display: flex !important;
+    flex-direction: row !important;
   }
 
-  .breath-input {
-    /* font-size: 0.8rem !important; */
-
+  .input label {
+    font-size: 4.8rem !important;
+    margin-top: 0rem !important;
+    margin-bottom: -0.2rem !important;
+    padding: 0.2rem !important;
+    line-height: 3.8rem !important;
   }
 
   .breaths {
@@ -48,55 +20,81 @@
     font-size: 1rem !important;
   }
 
-  .start {
-    /* font-size: 0.7rem !important; */
-  }
-
   .button-inactive {
     pointer-events: none;
     background-color: #ffe5ee !important;
     color: #f9c0d2 !important;
   }
 
-.circle-outline {
-  width: 12rem !important;
-  height: 12rem !important;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 0.5rem solid #f1f1f1;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  z-index: 0;
-}
+  .circle-outline {
+    width: 12rem !important;
+    height: 12rem !important;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0.5rem solid #f1f1f1;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    z-index: 0;
+  }
 
-.circle-progress {
-  width: 1rem;
-  height: 1rem;
-  position: absolute;
-  background-color: #CD001A;
-  border-radius: 50%;
-  transition: 4s ease all;
-  z-index: 2;
-}
+  .circle-progress {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    background-color: #cd001a;
+    border-radius: 50%;
+    transition: 4s ease all;
+    z-index: 2;
+  }
 
-.circle-grow {
-  transform: scale(16);
-  -webkit-transform: scale(16);
-  -moz-transform: scale(16);
-  -ms-transform: scale(16);
-  -o-transform: scale(16);
-}
+  .circle-grow {
+    transform: scale(16);
+    -webkit-transform: scale(16);
+    -moz-transform: scale(16);
+    -ms-transform: scale(16);
+    -o-transform: scale(16);
+  }
   #object-position-9 {
-   top: 80% !important;
-   left: -30% !important;
+    top: 80% !important;
+    left: -30% !important;
   }
 
   #object-position-13 {
     display: none;
   }
-
 }
 
-.containerOuter {
+@font-face {
+  font-family: "Grotesk";
+  src: url(./assets/sharp-grotesk-medium.otf);
+}
+
+@font-face {
+  font-family: "Sohne Narrow";
+  src: url(./assets/sohne-schmal.otf);
+}
+
+@font-face {
+  font-family: "Sohne Wide";
+  src: url(./assets/sohne-wide.otf);
+}
+
+@font-face {
+  font-family: "Sohne Wide Bold";
+  src: url(./assets/sohne-wide-bold.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Sohne Wide", sans-serif;
+}
+
+.container {
+  height: 100vh;
+}
+
+.container-outer {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -105,36 +103,20 @@
   margin-top: 3.5rem;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background-color: #f39237;
+}
+
 span {
   margin-top: 1.25rem;
 }
 
-body {
-  margin: 0;
-  /* max-height: 100vh; */
-  display: flex; 
-  flex-direction: column;
-  /* justify-content: center;
-  align-items: center;
-  text-align: center; */
-  color: #fff;
-  background-color: #F39237;
-
-}
-
-/* body::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-} */
-
-.instructions {
-  color: #ffffff;
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1.4rem;
+.highlighted {
+  color: #fa0e58;
 }
 
 .input {
@@ -160,8 +142,11 @@ body {
   letter-spacing: 0.019rem;
 }
 
-.highlighted {
-  color: #fa0e58;
+.instructions {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.4rem;
 }
 
 select {
@@ -206,19 +191,14 @@ select {
   max-height: 4rem;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   -webkit-transition: max-width 1s, max-height 2s, box-shadow 2s;
-  
 }
 
-
-.circle-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  z-index: 0;
+.circle-grow {
+  transform: scale(16);
+  -webkit-transform: scale(16);
+  -moz-transform: scale(16);
+  -ms-transform: scale(16);
+  -o-transform: scale(16);
 }
 
 .circle-outline {
@@ -237,18 +217,21 @@ select {
   width: 1rem;
   height: 1rem;
   position: absolute;
-  background-color: #CD001A;
+  background-color: #cd001a;
   border-radius: 50%;
   transition: 4s ease all;
   z-index: 2;
 }
 
-.circle-grow {
-  transform: scale(16);
-  -webkit-transform: scale(16);
-  -moz-transform: scale(16);
-  -ms-transform: scale(16);
-  -o-transform: scale(16);
+.circle-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  z-index: 0;
 }
 
 .breaths {
@@ -271,19 +254,15 @@ select {
   font-size: 1rem;
 }
 
-.container {
-  height: 100vh;
-}
-
 button {
-    font-family: "Sohne Wide Bold", sans-serif;
+  font-family: "Sohne Wide Bold", sans-serif;
   padding: 1.5rem 1.5rem;
   border-radius: 2.5rem;
   background-color: #ffffff;
-  color: #00874F;
+  color: #00874f;
   border: none;
   cursor: pointer;
-    box-shadow: 0 3px 10px rgba(55, 54, 54, 0.2);
+  box-shadow: 0 3px 10px rgba(55, 54, 54, 0.2);
   transition: 0.3s ease all;
   -webkit-border-radius: 2.5rem;
   -moz-border-radius: 2.5rem;
@@ -296,7 +275,7 @@ button {
 }
 
 button:hover {
-  background-color:  #00874F;
+  background-color: #00874f;
   color: #ffffff;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   transform: translate(0, -10%);
@@ -311,11 +290,10 @@ button:hover {
   -o-transition: 1s ease all;
 }
 
-
 .button-inactive {
   pointer-events: none;
-    background-color: #ffe5ee !important;
-    color: #f9c0d2 !important;
+  background-color: #ffe5ee !important;
+  color: #f9c0d2 !important;
 }
 
 .instructions {
@@ -332,44 +310,45 @@ button:hover {
 
 @keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-moz-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-o-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-ms-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
+  }
 }
