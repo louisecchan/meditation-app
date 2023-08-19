@@ -72,6 +72,11 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .input {
+    margin-right: 0rem !important;
+  }
+}
 @font-face {
   font-family: "Grotesk";
   src: url(./assets/sharp-grotesk-medium.otf);
