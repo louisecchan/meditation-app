@@ -21,6 +21,11 @@
     margin-right: 0rem !important;
   }
 
+  select {
+    padding-top: 1.3rem !important;
+    padding-bottom: 1.3rem !important;
+  }
+
   .breaths {
     font-size: 0.7rem !important;
   }
@@ -36,6 +41,7 @@
   }
 
   .circle-outline {
+    margin-top: -3rem !important;
     width: 12rem !important;
     height: 12rem !important;
     border-radius: 50%;
@@ -46,6 +52,7 @@
   }
 
   .circle-progress {
+    margin-top: -3rem !important;
     width: 1rem;
     height: 1rem;
     position: absolute;
@@ -62,19 +69,20 @@
     -ms-transform: scale(9) !important;
     -o-transform: scale(9) !important;
   }
-  #object-position-9 {
-    top: 80% !important;
-    left: -30% !important;
-  }
-
-  #object-position-13 {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 768px) {
   .input {
     margin-right: 0rem !important;
+  }
+
+  .container-left {
+    margin-bottom: 2rem !important;
+  }
+
+  select {
+    padding-top: 1.3rem !important;
+    padding-bottom: 1.3rem !important;
   }
 }
 @font-face {
