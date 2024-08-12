@@ -1,76 +1,3 @@
-@media screen and (max-width: 420px) {
-  .container-outer {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-  }
-
-  .container-left {
-    margin-top: -3rem !important;
-  }
-
-  .input label {
-    font-size: 4.8rem !important;
-    margin-top: 0rem !important;
-    margin-bottom: 0.5rem !important;
-    padding: 0.2rem !important;
-    line-height: 3.8rem !important;
-  }
-
-  .input {
-    margin-right: 0rem !important;
-  }
-
-  select {
-    padding-top: 1.3rem !important;
-    padding-bottom: 1.3rem !important;
-  }
-
-  .breaths {
-    font-size: 0.7rem !important;
-  }
-
-  .instructions {
-    font-size: 0.9rem !important;
-  }
-
-  .button-inactive {
-    pointer-events: none;
-    background-color: #ffe5ee !important;
-    color: #f9c0d2 !important;
-  }
-
-  .circle-outline {
-    margin-top: -3rem !important;
-    width: 12rem !important;
-    height: 12rem !important;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 0.5rem solid #f1f1f1;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    z-index: 0;
-  }
-
-  .circle-progress {
-    margin-top: -3rem !important;
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    background-color: #cd001a;
-    border-radius: 50%;
-    transition: 4s ease all;
-    z-index: 2;
-  }
-
-  .circle-grow {
-    transform: scale(9) !important;
-    -webkit-transform: scale(9) !important;
-    -moz-transform: scale(9) !important;
-    -ms-transform: scale(9) !important;
-    -o-transform: scale(9) !important;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .input {
     margin-right: 0rem !important;
@@ -98,6 +25,78 @@
   select {
     padding-top: 1.3rem !important;
     padding-bottom: 1.3rem !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container-outer {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+
+  .input label {
+    font-size: 7.8rem !important;
+    margin-top: 0rem !important;
+    margin-bottom: 0.5rem !important;
+    padding: 0.2rem !important;
+    text-align: left !important;
+  }
+
+  .input {
+    margin-right: 0rem !important;
+  }
+
+  .container-select {
+    margin-top: 0 !important;
+  }
+
+  select {
+    padding-top: 1.3rem !important;
+    padding-bottom: 1.3rem !important;
+  }
+
+  .breaths {
+    font-size: 0.7rem !important;
+  }
+
+  .instructions {
+    font-size: 0.9rem !important;
+  }
+
+  .button-inactive {
+    pointer-events: none;
+    background-color: #ffe5ee !important;
+    color: #f9c0d2 !important;
+  }
+
+  .circle-outline {
+    width: 20.5rem !important;
+    height: 20.5rem !important;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0.5rem solid #f1f1f1;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    z-index: 0;
+  }
+
+  .circle-progress {
+    margin-top: 0 !important;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    background-color: #cd001a;
+    border-radius: 50%;
+    transition: 4s ease all;
+    z-index: 2;
+  }
+
+  .circle-grow {
+    transform: scale(9) !important;
+    -webkit-transform: scale(9) !important;
+    -moz-transform: scale(9) !important;
+    -ms-transform: scale(9) !important;
+    -o-transform: scale(9) !important;
   }
 }
 
