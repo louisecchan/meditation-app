@@ -122,6 +122,7 @@
   height: 100vh;
 
   .container-left {
+    margin-top: 20px;
     margin-right: 55px;
     padding-top: 0.5rem;
 
@@ -131,6 +132,7 @@
   }
 
   .container-right {
+    margin-top: 20px;
     margin-left: 55px;
   }
 }
@@ -222,11 +224,11 @@ select {
 }
 
 .circle-grow {
-  transform: scale(16);
-  -webkit-transform: scale(16);
-  -moz-transform: scale(16);
-  -ms-transform: scale(16);
-  -o-transform: scale(16);
+  transform: scale(26);
+  -webkit-transform: scale(26);
+  -moz-transform: scale(26);
+  -ms-transform: scale(26);
+  -o-transform: scale(26);
 }
 
 .circle-outline {
