@@ -28,7 +28,7 @@ const breathTextUpdate = () => {
   setTimeout(() => {
     instructions.innerText = "Hold Breath";
     setTimeout(() => {
-      instructions.innerText = "Exhale Breath Slowly 😤";
+      instructions.innerText = "Exhale Breath Slowly";
     }, 4000);
   }, 4000);
 };
