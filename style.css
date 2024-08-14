@@ -125,6 +125,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Sohne Wide", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container-outer {
