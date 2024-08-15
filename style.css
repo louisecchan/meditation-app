@@ -81,7 +81,8 @@
   }
 
   .circle-progress {
-    margin-top: 0 !important;
+    margin-top: -0.1rem !important;
+    margin-left: 0rem !important;
     width: 1rem;
     height: 1rem;
     position: absolute;
@@ -92,11 +93,11 @@
   }
 
   .circle-grow {
-    transform: scale(21) !important;
-    -webkit-transform: scale(21) !important;
-    -moz-transform: scale(21) !important;
-    -ms-transform: scale(21) !important;
-    -o-transform: scale(21) !important;
+    transform: scale(21.9) !important;
+    -webkit-transform: scale(21.9) !important;
+    -moz-transform: scale(21.9) !important;
+    -ms-transform: scale(21.9) !important;
+    -o-transform: scale(21.9) !important;
   }
 
   .start {
