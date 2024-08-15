@@ -98,6 +98,10 @@
     -ms-transform: scale(9) !important;
     -o-transform: scale(9) !important;
   }
+
+  .start {
+    margin-bottom: 3rem !important;
+  }
 }
 
 @font-face {
