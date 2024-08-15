@@ -92,11 +92,11 @@
   }
 
   .circle-grow {
-    transform: scale(9) !important;
-    -webkit-transform: scale(9) !important;
-    -moz-transform: scale(9) !important;
-    -ms-transform: scale(9) !important;
-    -o-transform: scale(9) !important;
+    transform: scale(21) !important;
+    -webkit-transform: scale(21) !important;
+    -moz-transform: scale(21) !important;
+    -ms-transform: scale(21) !important;
+    -o-transform: scale(21) !important;
   }
 
   .start {
