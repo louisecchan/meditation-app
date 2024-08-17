@@ -5,13 +5,10 @@ const instructions = document.querySelector(".instructions");
 const breathsText = document.querySelector(".no-of-breaths-left");
 let breathsLeft = 3;
 
-// Watching for selected breaths from user
 numberOfBreaths.addEventListener("change", () => {
   breathsLeft = numberOfBreaths.value;
   breathsText.innerText = breathsLeft;
 });
-
-// Grow/Shrink Circle
 
 const growCircle = () => {
   circleProgress.classList.add("circle-grow");
@@ -34,7 +31,6 @@ const breathTextUpdate = () => {
 };
 
 // Breathing App Function
-
 const breathingApp = () => {
   const breathingAnimation = setInterval(() => {
     if (breathsLeft === 0) {
@@ -51,7 +47,6 @@ const breathingApp = () => {
 };
 
 // Start Breathing
-
 start.addEventListener("click", () => {
   start.classList.add("button-inactive");
   instructions.innerText = "Chill the fuck out, and get ready";
