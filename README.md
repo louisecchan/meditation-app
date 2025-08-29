@@ -1,6 +1,6 @@
 # Sanity O'Clock 🌿
 
-A simple, browser-based meditation application designed to help users stay sane and focus through guided sessions.
+A simple, browser-based meditation application designed to help users stay sane and focused through guided sessions.
 
 
 ## 🛠️ Technologies Used
