@@ -65,7 +65,7 @@ span {
 .input {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
   text-transform: uppercase;
   line-height: 6.5rem;
@@ -360,11 +360,30 @@ button:hover {
 @media screen and (max-width: 768px) {
   .input {
     margin-right: 0rem !important;
+    line-height: normal;
   }
 
   .input label {
-    text-align: center;
-    margin-bottom: 1rem !important;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .input label span {
+    margin-top: 0;
+  }
+
+  .container-outer .container-left {
+    padding-top: 0;
+  }
+
+  .container-outer .container-right {
+    margin-left: 25px;
+    margin-top: 100px;
+  }
+
+  .circle-outline {
+    width: 18rem;
+    height: 18rem;
   }
 }
 
