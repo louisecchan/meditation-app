@@ -37,6 +37,7 @@ const breathingApp = () => {
       clearInterval(breathingAnimation);
       instructions.innerText = "Breathing session completed.";
       start.classList.remove("button-inactive");
+      start.innerText = "Again?";
       breathsLeft = numberOfBreaths.value;
       breathsText.innerText = breathsLeft;
       return;
@@ -49,6 +50,7 @@ const breathingApp = () => {
 // Start Breathing
 start.addEventListener("click", () => {
   start.classList.add("button-inactive");
+  start.innerText = "In progress...";
   instructions.innerText = "Chill the fuck out, and get ready";
   setTimeout(() => {
     instructions.innerText = "Breathing is about to begin...";
