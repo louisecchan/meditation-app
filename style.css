@@ -170,6 +170,54 @@ select {
   -moz-transform-origin: center center;
   -ms-transform-origin: center center;
   -o-transform-origin: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smiley-face {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.circle-grow .smiley-face {
+  opacity: 1;
+}
+
+.eye {
+  position: absolute;
+  width: 0.08rem;
+  height: 0.08rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 30%;
+}
+
+.eye-left {
+  left: 30%;
+}
+
+.eye-right {
+  right: 30%;
+}
+
+.smile {
+  position: absolute;
+  width: 0.35rem;
+  height: 0.18rem;
+  border: 0.04rem solid #ffffff;
+  border-top: none;
+  border-radius: 0 0 0.2rem 0.2rem;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 .circle-wrap {
