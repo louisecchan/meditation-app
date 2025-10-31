@@ -422,7 +422,7 @@ button:hover {
 
   .circle-wrap {
     padding-top: 0 !important;
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
   }
 
   .start {
@@ -456,6 +456,7 @@ button:hover {
 
   .input {
     margin-right: 0rem !important;
+    gap: 35px;
   }
 
   .container-select {
@@ -467,7 +468,6 @@ button:hover {
     align-items: center;
   }
 
-
   select {
     padding-top: 1.3rem !important;
     padding-bottom: 1.3rem !important;
@@ -478,7 +478,7 @@ button:hover {
   }
 
   .instructions {
-    font-size: 1.1rem !important;
+    font-size: 1.05rem;
   }
 
   .button-inactive {
@@ -488,8 +488,8 @@ button:hover {
   }
 
   .circle-outline {
-    width: 20.5rem !important;
-    height: 20.5rem !important;
+    width: 17rem;
+    height: 17rem;
     border-radius: 50%;
     background-color: transparent;
     border: 0.5rem solid #f1f1f1;
@@ -498,7 +498,6 @@ button:hover {
   }
 
   .circle-progress {
-    margin-top: -0.1rem !important;
     margin-left: 0rem !important;
     width: 1rem;
     height: 1rem;
@@ -518,11 +517,15 @@ button:hover {
   }
 
   .circle-grow {
-    transform: scale(21.9) !important;
-    -webkit-transform: scale(21.9) !important;
-    -moz-transform: scale(21.9) !important;
-    -ms-transform: scale(21.9) !important;
-    -o-transform: scale(21.9) !important;
+    transform: scale(17) !important;
+    -webkit-transform: scale(17) !important;
+    -moz-transform: scale(17) !important;
+    -ms-transform: scale(17) !important;
+    -o-transform: scale(17) !important;
+  }
+
+  .circle-wrap {
+    margin-bottom: 2rem;
   }
 
   .start {
