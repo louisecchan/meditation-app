@@ -409,19 +409,15 @@ button:hover {
   .container-left {
     margin-right: 0 !important;
     margin-top: 60px !important;
-  }
-
-  .circle-outline {
-    margin-top: 0 !important;
-  }
-
-  .container-left {
     margin-bottom: 2rem !important;
-    margin-right: 0 !important;
   }
 
   .container-right {
     margin-left: 0 !important;
+  }
+
+  .circle-outline {
+    margin-top: 0 !important;
   }
 
   .circle-wrap {
@@ -432,13 +428,14 @@ button:hover {
   .start {
     margin-bottom: 3rem !important;
   }
+
   select {
     padding-top: 1.3rem !important;
     padding-bottom: 1.3rem !important;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
   .container-outer {
     display: flex !important;
     flex-direction: row !important;
@@ -446,11 +443,15 @@ button:hover {
   }
 
   .input label {
-    font-size: 7.8rem !important;
+    font-size: 3rem;
     margin-top: 0rem !important;
     margin-bottom: 0.5rem !important;
     padding: 0.2rem !important;
     text-align: left !important;
+  }
+
+  .input label span {
+    text-align: center;
   }
 
   .input {
@@ -459,7 +460,13 @@ button:hover {
 
   .container-select {
     margin-top: 0 !important;
+    display: contents;
   }
+
+  .container-left .container-select {
+    align-items: center;
+  }
+
 
   select {
     padding-top: 1.3rem !important;
