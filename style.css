@@ -39,10 +39,6 @@
     margin-top: 20px;
     margin-right: 55px;
     padding-top: 0.5rem;
-
-    .container-select {
-      margin-top: 2.3rem;
-    }
   }
 
   .container-right {
@@ -70,7 +66,6 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 2rem;
   text-align: left;
   text-transform: uppercase;
   line-height: 6.5rem;
@@ -79,17 +74,22 @@ span {
 
 .input label {
   font-family: "Sohne Narrow", sans-serif;
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 500;
   margin-bottom: 0;
-  letter-spacing: 0.019rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input label span {
+  display: block;
 }
 
 .instructions {
   color: #ffffff;
   font-size: 1.1rem;
   margin-top: 0;
-  margin-bottom: 1.4rem;
+  margin-bottom: 3.1rem;
 }
 
 select {
@@ -145,7 +145,6 @@ select {
 }
 
 .circle-outline {
-  margin-top: -1.5rem;
   width: 26rem;
   height: 26rem;
   border-radius: 50%;
@@ -156,7 +155,6 @@ select {
 }
 
 .circle-progress {
-  margin-top: -1.5rem;
   width: 1rem;
   height: 1rem;
   position: absolute;
@@ -172,7 +170,7 @@ select {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
   margin-bottom: 1.7rem;
   z-index: 0;
 }
@@ -240,10 +238,6 @@ button:hover {
   color: #f9c0d2 !important;
 }
 
-.instructions {
-  margin-top: 1.8rem;
-}
-
 .fade-in {
   animation: fadeIn ease 5s;
   -webkit-animation: ;
@@ -309,19 +303,19 @@ button:hover {
 }
 
 @media screen and (max-width: 720px) {
-    .input label {
-      text-align: left !important;
-      margin-bottom: 0 !important;
-    }
+  .input label {
+    text-align: left !important;
+    margin-bottom: 0 !important;
+  }
 
-    .container-left {
-      margin-right: 0 !important;
-      margin-top: 60px !important;
-    }
+  .container-left {
+    margin-right: 0 !important;
+    margin-top: 60px !important;
+  }
 
-    .circle-outline {
-      margin-top: 0 !important;
-    }
+  .circle-outline {
+    margin-top: 0 !important;
+  }
 
   .container-left {
     margin-bottom: 2rem !important;
