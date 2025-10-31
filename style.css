@@ -363,6 +363,10 @@ button:hover {
   .container-outer .container-left {
     margin-right: 0;
   }
+
+  .instructions {
+    padding-top: 0 !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
