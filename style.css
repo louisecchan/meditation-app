@@ -347,6 +347,16 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .input label {
+    font-size: 5rem;
+  }
+
+  .container-outer .container-left {
+    margin-right: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .input {
     margin-right: 0rem !important;
