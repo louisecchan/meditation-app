@@ -474,10 +474,13 @@ button:hover {
   .container-select {
     margin-top: 0 !important;
     display: contents;
+    align-self: center;
   }
 
   .container-left .container-select {
+    display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   select {
@@ -490,6 +493,7 @@ button:hover {
   }
 
   .instructions {
+    padding-top: 0.5rem;
     font-size: 1.05rem;
   }
 
