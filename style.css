@@ -181,6 +181,10 @@ select {
   position: relative;
   opacity: 0;
   transition: opacity 0.5s ease;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .circle-grow .smiley-face {
@@ -194,6 +198,10 @@ select {
   background-color: #ffffff;
   border-radius: 50%;
   top: 30%;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .eye-left {
@@ -213,11 +221,13 @@ select {
   border-radius: 0 0 0.2rem 0.2rem;
   bottom: 25%;
   left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%) translateZ(0);
+  -webkit-transform: translateX(-50%) translateZ(0);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .circle-wrap {
@@ -530,6 +540,9 @@ button:hover {
     -moz-transform-origin: center center;
     -ms-transform-origin: center center;
     -o-transform-origin: center center;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    -webkit-font-smoothing: subpixel-antialiased;
   }
 
   .circle-grow {
