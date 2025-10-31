@@ -162,6 +162,14 @@ select {
   border-radius: 50%;
   transition: 4s ease all;
   z-index: 2;
+  will-change: transform;
+  transform-origin: center center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
 }
 
 .circle-wrap {
@@ -402,6 +410,14 @@ button:hover {
     border-radius: 50%;
     transition: 4s ease all;
     z-index: 2;
+    will-change: transform;
+    transform-origin: center center;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
   }
 
   .circle-grow {
