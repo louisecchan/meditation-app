@@ -173,6 +173,9 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-font-smoothing: subpixel-antialiased;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .smiley-face {
@@ -185,6 +188,7 @@ select {
   -webkit-transform: translateZ(0);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .circle-grow .smiley-face {
@@ -202,6 +206,7 @@ select {
   -webkit-transform: translateZ(0);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .eye-left {
@@ -228,6 +233,7 @@ select {
   -o-transform: translateX(-50%);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .circle-wrap {
