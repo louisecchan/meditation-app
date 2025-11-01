@@ -27,13 +27,17 @@
   -webkit-font-smoothing: antialiased;
 }
 
+html {
+  height: 100%;
+}
+
 .container-outer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
 
   .container-left {
     margin-top: 20px;
@@ -50,6 +54,7 @@
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
   color: #fff;
   background-color: #ffad10;
 }
@@ -355,7 +360,7 @@ button:hover {
 
 @-o-keyframes fadeIn {
   0% {
-    opacity: 0;
+    opacity: q0;
   }
   100% {
     opacity: 1;
