@@ -29,6 +29,8 @@
 
 html {
   height: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 .container-outer {
@@ -54,7 +56,8 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   color: #fff;
   background-color: #ffad10;
 }
@@ -189,18 +192,11 @@ select {
   position: relative;
   opacity: 0;
   transition: opacity 0.5s ease;
-  transform: translateZ(0) scale(1);
-  -webkit-transform: translateZ(0) scale(1);
-  -moz-transform: translateZ(0) scale(1);
+  display: flex;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
   will-change: opacity;
 }
 
@@ -208,56 +204,22 @@ select {
   opacity: 1;
 }
 
-.eye {
-  position: absolute;
-  width: 0.08rem;
-  height: 0.08rem;
-  background-color: #ffffff;
-  border-radius: 50%;
-  top: 30%;
-  transform: translateZ(0) scale(1);
-  -webkit-transform: translateZ(0) scale(1);
-  -moz-transform: translateZ(0) scale(1);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: -moz-crisp-edges;
-  will-change: transform;
+.smiley-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
-.eye-left {
-  left: 30%;
+.smiley-eye {
+  fill: #ffffff;
 }
 
-.eye-right {
-  right: 30%;
-}
-
-.smile {
-  position: absolute;
-  width: 0.35rem;
-  height: 0.18rem;
-  border: 0.04rem solid #ffffff;
-  border-top: none;
-  border-radius: 0 0 0.2rem 0.2rem;
-  bottom: 25%;
-  left: 50%;
-  transform: translateX(-50%) translateZ(0) scale(1);
-  -webkit-transform: translateX(-50%) translateZ(0) scale(1);
-  -moz-transform: translateX(-50%) translateZ(0) scale(1);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: -moz-crisp-edges;
-  will-change: transform;
+.smiley-mouth {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .circle-wrap {
