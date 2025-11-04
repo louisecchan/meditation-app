@@ -141,15 +141,13 @@ select {
   color: #ffd60a;
   max-width: 10.5rem;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: max-width 1s, max-height 2s, box-shadow 2s;
   -webkit-transition: max-width 1s, max-height 2s, box-shadow 2s;
 }
 
-.circle-grow {
-  transform: scale(26);
-  -webkit-transform: scale(26);
-  -moz-transform: scale(26);
-  -ms-transform: scale(26);
-  -o-transform: scale(26);
+.circle-progress.circle-grow {
+  width: 26rem;
+  height: 26rem;
 }
 
 .circle-outline {
@@ -166,60 +164,20 @@ select {
   width: 1rem;
   height: 1rem;
   position: absolute;
+  top: 50%;
+  left: 50%;
   background-color: #cd001a;
   border-radius: 50%;
-  transition: 4s ease all;
+  transition: width 4s ease, height 4s ease;
   z-index: 2;
-  will-change: transform;
-  transform-origin: center center;
+  will-change: width, height;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  -webkit-transform-origin: center center;
-  -moz-transform-origin: center center;
-  -ms-transform-origin: center center;
-  -o-transform-origin: center center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-font-smoothing: subpixel-antialiased;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-}
-
-.smiley-face {
-  width: 80%;
-  height: 80%;
-  position: relative;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  display: flex;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  will-change: opacity;
-}
-
-.circle-grow .smiley-face {
-  opacity: 0;
-}
-
-.smiley-svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.smiley-eye {
-  fill: #ffffff;
-}
-
-.smiley-mouth {
-  fill: none;
-  stroke: #ffffff;
-  stroke-width: 6;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
 }
 
 .circle-wrap {
@@ -401,12 +359,9 @@ button:hover {
     height: 16rem;
   }
 
-  .circle-grow {
-    transform: scale(16) !important;
-    -webkit-transform: scale(16) !important;
-    -moz-transform: scale(16) !important;
-    -ms-transform: scale(16) !important;
-    -o-transform: scale(16) !important;
+  .circle-progress.circle-grow {
+    width: 16rem;
+    height: 16rem;
   }
 
   .instructions {
@@ -520,29 +475,25 @@ button:hover {
     width: 1rem;
     height: 1rem;
     position: absolute;
+    top: 50%;
+    left: 50%;
     background-color: #cd001a;
     border-radius: 50%;
-    transition: 4s ease all;
+    transition: width 4s ease, height 4s ease;
     z-index: 2;
-    will-change: transform;
-    transform-origin: center center;
+    will-change: width, height;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    -webkit-transform-origin: center center;
-    -moz-transform-origin: center center;
-    -ms-transform-origin: center center;
-    -o-transform-origin: center center;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    -webkit-font-smoothing: subpixel-antialiased;
+    transform: translate3d(-50%, -50%, 0);
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
   }
 
-  .circle-grow {
-    transform: scale(17) !important;
-    -webkit-transform: scale(17) !important;
-    -moz-transform: scale(17) !important;
-    -ms-transform: scale(17) !important;
-    -o-transform: scale(17) !important;
+  .circle-progress.circle-grow {
+    width: 17rem;
+    height: 17rem;
   }
 
   .circle-wrap {
