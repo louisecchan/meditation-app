@@ -1,21 +1,25 @@
 @font-face {
   font-family: "Grotesk";
   src: url(./assets/sharp-grotesk-medium.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Sohne Narrow";
   src: url(./assets/sohne-schmal.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Sohne Wide";
   src: url(./assets/sohne-wide.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Sohne Wide Bold";
   src: url(./assets/sohne-wide-bold.otf);
+  font-display: swap;
 }
 
 * {
